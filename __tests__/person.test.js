@@ -26,4 +26,8 @@ describe('Person', () => {
     expect(person1.planetCalc(planetMultiplier)).toEqual(8);
   });
 
+  test ('it should return the life expectance in number of years on a planet', () => {
+    let planetMultiplier = .24
+    expect(person1.lifeLeft(planetMultiplier)).toEqual(333);
+  });
 });

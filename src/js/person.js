@@ -10,5 +10,7 @@ export default class Person {
     this.outputAge = parseInt(this.earthAge / planetMultiplier);
     return this.outputAge;
   }
-  
+  lifeLeft(planetMultiplier) {
+
+  }
 }
