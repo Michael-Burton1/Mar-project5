@@ -7,7 +7,7 @@ describe('Person', () => {
     person1 = new Person(100);
   });
 
-  test ('should take the users inputted earth age and calculate their mercury age' , () => {
+  test ('it should take the users inputted earth age and calculate their mercury age' , () => {
     expect(person1.mercuryAge).toEqual(24);
   });
 });
