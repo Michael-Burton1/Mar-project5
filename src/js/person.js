@@ -9,17 +9,17 @@ export default class Person {
   }
 
   mercuryCalc() {
-    this.mercuryAge = this.earthAge *.24;
+    this.mercuryAge = parseInt(this.earthAge /.24);
     return this.mercuryAge;
   }
 
   venusCalc() {
-    this.venusAge = this.earthAge * .62;
+    this.venusAge = parseInt(this.earthAge / .62);
     return this.venusAge;
   }
 
   marsCalc() {
-    this.marsAge = this.earthAge * 1.88;
+    this.marsAge = parseInt(this.earthAge / 1.88);
     return this.marsAge;
   }
   JupiterCalc() {
