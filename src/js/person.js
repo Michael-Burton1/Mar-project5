@@ -27,5 +27,7 @@ export default class Person {
     this.jupiterAge = parseInt(this.earthAge / 11.86);
     return this.jupiterAge;
   }
+  planetCalc() {
 
+  }
 }
