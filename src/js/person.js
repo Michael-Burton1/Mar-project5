@@ -14,7 +14,8 @@ export default class Person {
   }
 
   venusCalc() {
-
+    this.venusAge = this.earthAge * .62;
+    return this.venusAge;
   }
 
   marsCalc() {
