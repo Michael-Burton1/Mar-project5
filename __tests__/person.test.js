@@ -8,6 +8,6 @@ describe('Person', () => {
   });
 
   test ('it should take the users inputted earth age and calculate their mercury age' , () => {
-    expect(person1.mercuryAge).toEqual(24);
+    expect(person1.mercuryCalc()).toEqual(24);
   });
 });

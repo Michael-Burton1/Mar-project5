@@ -9,7 +9,8 @@ export default class Person {
   }
 
   mercuryCalc() {
-
+    this.mercuryAge = this.earthAge *.24;
+    return this.mercuryAge;
   }
 
   venusCalc() {
