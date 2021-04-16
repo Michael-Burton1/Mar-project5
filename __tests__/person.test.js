@@ -8,22 +8,22 @@ describe('Person', () => {
   });
 
   test ('it should take the users inputted earth age and calculate their mercury age' , () => {
-     let planetMultiplier = .24
-    expect(person1.planetCalc()).toEqual(416);
+    let planetMultiplier = .24
+    expect(person1.planetCalc(planetMultiplier)).toEqual(416);
   });
 
   test ('it should take the users inputted earth age and calculate their venus age' , () => {
     let planetMultiplier = .62
-    expect(person1.planetCalc()).toEqual(161);
+    expect(person1.planetCalc(planetMultiplier)).toEqual(161);
   });
 
   test ('it should take the users inputted earth age and calculate their mars age' , () => {
     let planetMultiplier = 1.88
-    expect(person1.planetCalc()).toEqual(53);
+    expect(person1.planetCalc(planetMultiplier)).toEqual(53);
   });
   test ('it should take the users inputted earth age and calculate their jupiter age' , () => {
     let planetMultiplier = 11.86
-    expect(person1.planetCalc()).toEqual(8);
+    expect(person1.planetCalc(planetMultiplier)).toEqual(8);
   });
 
 });
