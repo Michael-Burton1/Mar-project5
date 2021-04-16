@@ -11,6 +11,7 @@ export default class Person {
     return this.outputAge;
   }
   lifeLeft(planetMultiplier) {
-
+    let planetExpect = parseInt(this.lifeExpect / planetMultiplier);
+    return planetExpect;
   }
 }
