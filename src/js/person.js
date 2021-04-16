@@ -19,7 +19,8 @@ export default class Person {
   }
 
   marsCalc() {
-
+    this.marsAge = this.earthAge * 1.88;
+    return this.marsAge;
   }
   JupiterCalc() {
     
