@@ -14,4 +14,8 @@ describe('Person', () => {
   test ('it should take the users inputted earth age and calculate their venus age' , () => {
     expect(person1.venusCalc()).toEqual(62);
   });
+
+  test ('it should take the users inputted earth age and calculate their mars age' , () => {
+    expect(person1.marsCalc()).toEqual(188);
+  });
 });
