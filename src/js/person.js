@@ -1,11 +1,12 @@
 export default class Person {
 
-  constructor (earthAge, mercuryAge, venusAge, marsAge, jupiterAge) {
+  constructor (earthAge, mercuryAge, venusAge, marsAge, jupiterAge, lifeExpect) {
     this.earthAge = earthAge;
     this.mercuryAge = mercuryAge;
     this.venusAge = venusAge;
     this.marsAge = marsAge;
     this.jupiterAge = jupiterAge;
+    this.lifeExpect = 80;
   }
 
   mercuryCalc() {
@@ -26,4 +27,5 @@ export default class Person {
     this.jupiterAge = parseInt(this.earthAge / 11.86);
     return this.jupiterAge;
   }
+
 }
