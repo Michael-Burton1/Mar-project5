@@ -10,9 +10,9 @@ export default class Person {
     this.outputAge = parseInt(this.earthAge / planetMultiplier);
     return this.outputAge;
   }
-  lifeLeft(this.outputAge, planetMultiplier) {
+  lifeLeft(outputAge, planetMultiplier) {
     let planetExpect = parseInt(this.lifeExpect / planetMultiplier);
-    let yearsLeft = planetExpect - this.outputAge;
+    let yearsLeft = planetExpect - outputAge;
     return yearsLeft;
   }
 }

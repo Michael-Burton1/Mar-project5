@@ -1,3 +1,11 @@
 body {
   background-color: rgb(127, 216, 211);
 }
+form {
+  padding: 10px;
+  border: solid 5px black;
+}
+.life, .death {
+  display: none;
+  border: solid 5px black;
+}

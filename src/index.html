@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Document</title>
 </head>
 <body>
-  <h1>help!</h1>
+  <div class="container">
+    <h1>Your personal planitary age calculator</h1>
+    <h3>Have you ever wondered how old you would be right now if you lived on another planet??</h3>
+    <p>Well..... Here is your chance to find out!</p>
+    <p>All you need to do is tell us old you are in Earth years and we will do the rest!</p>
+    <form id="ageForm">
+      <div class="form-group">
+        <label for=number>Type your age (...and don't lie this time!)</label><br>
+        <input id="number" class="form-control" type="text">
+      </div>
+      <button type= "submit" class="btn btn-secondary">Work your magic.</button>
+    </form>
+    <div class="results">
+      <div class="life">
+        <h3>Thx for the info...now comes the fun part.</h3>
+        <h4>Click a button to see how many years old you would be if you lived on another planet.</h4>
+        <button id="mercuryLife" class="btn btn-success">Mercury</button>
+        <button id="venusLife" class="btn btn-success">Venus</button>
+        <button id="marsLife" class="btn btn-success">Mars</button>
+        <button id="jupiterLife" class="btn btn-success">Jupiter</button>
+        <p id="yearsOld"></p>
+      </div>
+      <div class="death">
+        <h4>Fun right?.......WRONG!</h4>
+        <p>Everybody has to die sometime and you're no spring chicken.</p>
+        <h4>Click on a button to see how many years you have left to live on each planet.</h4>
+        <button id="mercuryDeath" class="btn btn-dark">Mercury</button>
+        <button id="venusDeath" class="btn btn-dark">Venus</button>
+        <button id="marsDeath" class="btn btn-dark">Mars</button>
+        <button id="jupiterDeath" class="btn btn-dark">Jupiter</button>
+        <p id="deadSoon"></p>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
