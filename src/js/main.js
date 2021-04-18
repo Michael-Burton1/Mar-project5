@@ -19,19 +19,22 @@ $(document).ready(function() {
     let planetMultiplier= .24;
     console.log(person1);
     person1.planetCalc(planetMultiplier);
-    $("#yearsOld").text(person1.planetCalc(planetMultiplier));
+    $("#yearsOld").text("If you lived here, this is how many years old you would be:  " + person1.planetCalc(planetMultiplier));
   });
   $("#venusLife").click(function(){
     let planetMultiplier= .62
-    this.person.planetCalc(planetMultiplier);
+    person1.planetCalc(planetMultiplier);
+    $("#yearsOld").text("If you lived here, this is how many years old you would be:  " + person1.planetCalc(planetMultiplier));
   });
   $("#marsLife").click(function(){
     let planetMultiplier= 1.88
-    this.person.planetCalc(planetMultiplier);
+    person1.planetCalc(planetMultiplier);
+    $("#yearsOld").text("If you lived here, this is how many years old you would be:  " + person1.planetCalc(planetMultiplier));
   });
   $("#jupiterLife").click(function(){
     let planetMultiplier= 11.86
-    this.person.planetCalc(planetMultiplier);
+    person1.planetCalc(planetMultiplier);
+    $("#yearsOld").text("If you lived here, this is how many years old you would be:  " + person1.planetCalc(planetMultiplier));
   });
 
 });
