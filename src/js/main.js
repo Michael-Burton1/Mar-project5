@@ -20,9 +20,6 @@ $(document).ready(function() {
     planetMultiplier= .24;
     person1.planetCalc(planetMultiplier);
     $("#yearsOld").text(person1.planetCalc(planetMultiplier));
-    console.log(person1);
-    
-    
   });
 
   $("#venusLife").click(function(){
@@ -44,13 +41,11 @@ $(document).ready(function() {
     planetMultiplier= .24;
     person1.planetCalc(planetMultiplier);
     let personOutputAge = person1.outputAge
-    console.log("personage: ", personOutputAge);
     let lifeLeftResult = person1.lifeLeft(personOutputAge,planetMultiplier);
     if (lifeLeftResult < 0) {
       $("#deadSoon").text("Congdatulations, You have lived " + Math.abs(lifeLeftResult) + " years over the age Expectancy for this planet! You'll probably outlive us all!");
     } else {
       $("#deadSoon").text("According to the facts you a due to die in " +lifeLeftResult + " years.");
-      console.log(person1);
     } 
   });
 
