@@ -4,7 +4,7 @@ describe('Person', () => {
   let person1;
 
   beforeEach(() =>{
-    person1 = new Person(100,);
+    person1 = new Person(100, 416);
   });
 
   test ('it should take the users inputted earth age and calculate their mercury age' , () => {
@@ -31,7 +31,8 @@ describe('Person', () => {
   //   expect(person1.lifeLeft(planetMultiplier)).toEqual(833);
   // });
   test ('it should take in the number of the user age on the planet calculated by planetCalc() and subtract it from the life expectancy of that planet' , () =>{
-    let planetMultiplier = .24
-    expect(person1.lifeLeft(planetCalc(planetMultiplier), planetMultiplier)).toEqual(417);
-  })
+    let planetMultiplier = .24;
+    let outputAge = 416;
+    expect(person1.lifeLeft(outputAge,planetMultiplier)).toEqual(417);
+  });
 });

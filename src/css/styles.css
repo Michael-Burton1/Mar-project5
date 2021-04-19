@@ -5,9 +5,13 @@ form {
   padding: 10px;
   border: solid 5px black;
 }
-/* .life, .death {
+button {
+  /* border: solid 10px black; */
+  margin-left: 10px;
+}
+.life, .death{
   margin-top: 10px;
   padding: 10px;
   display: none;
   border: solid 5px black;
-} */
+}
