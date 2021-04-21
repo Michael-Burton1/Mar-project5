@@ -3,7 +3,7 @@ export default class Person {
   constructor (earthAge, outputAge) {
     this.earthAge = earthAge;
     this.outputAge = outputAge;
-    this.lifeExpect = 80;
+    this.lifeExpect = 200;
   }
 
   planetCalc(planetMultiplier) { 
