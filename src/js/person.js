@@ -32,9 +32,10 @@ export default class Person {
     this.outputAge = parseInt(this.earthAge / planetMultiplier);
     return this.outputAge;
   }
-  lifeLeft(outputAge, planetMultiplier) {
-    let planetExpect = parseInt(this.lifeExpect / planetMultiplier);
-    let yearsLeft = (planetExpect - outputAge);
-    return yearsLeft;
+  mercuryLifeLeft(mercuryAge) {
+    let mercuryOutput= mercuryAge - 333
+    if (mercuryOutput < 0) {
+      return "you have lived " + 
+    }
   }
 }
