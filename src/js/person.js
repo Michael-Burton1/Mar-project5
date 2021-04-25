@@ -33,9 +33,23 @@ export default class Person {
     return this.outputAge;
   }
   mercuryLifeLeft(mercuryAge) {
-    let mercuryOutput= mercuryAge - 333
+    let mercuryOutput= 333 - mercuryAge; 
     if (mercuryOutput < 0) {
-      return "you have lived " + 
+      let mercuryResult = "You have lived " + Math.abs(mercuryOutput) + " years longer than you should have." ;
+      return mercuryResult;
+    } else{
+      let mercuryResult = "You WILL die in " + mercuryOutput + " years." ;
+      return mercuryResult;
+    }
+  }
+  venusLifeLeft(venusAge) {
+    let venusOutput= 129 - venusAge; 
+    if (venusOutput < 0) {
+      let venusResult = "You have lived " + Math.abs(venusOutput) + " years longer than you should have." ;
+      return venusResult;
+    } else{
+      let venusResult = "You WILL die in " + venusOutput + " years." ;
+      return venusResult;
     }
   }
 }

@@ -25,13 +25,17 @@ describe('Person', () => {
     expect(person1.jupiterCalc()).toEqual(8);
   });
 
-  test ('it should return the life expectance in number of years on a planet', () => {
-    
-    expect(person1.mercuryLifeLeft()).toEqual(-83);
+  test ('it should return the life expectance in number of years on mercury', () => {
+    expect(person1.mercuryLifeLeft(416)).toEqual("You have lived " + 83 + " years longer than you should have.");
   });
-  // test ('it should take in the number of the user age on the planet calculated by planetCalc() and subtract it from the life expectancy of that planet' , () =>{
-  //   let planetMultiplier = .24;
-  //   let outputAge = 416;
-  //   expect(person1.lifeLeft(outputAge,planetMultiplier)).toEqual(417);
-  // });
+  test ('it should return the life expectance in number of years on mercury', () => {
+    expect(person1.mercuryLifeLeft(100)).toEqual("You WILL die in " + 233 + " years.");
+  });
+  test ('it should return the life expectance in number of years on Venus', () => {
+    expect(person1.venusLifeLeft(229)).toEqual("You have lived " + 100 + " years longer than you should have.");
+  });
+  test ('it should return the life expectance in number of years on mercury', () => {
+    expect(person1.venusLifeLeft(100)).toEqual("You WILL die in " + 29 + " years.");
+  });
+  
 });
