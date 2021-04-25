@@ -20,16 +20,23 @@ _This is a webpage that will allow the user to input their age and then calculat
 
 ## Setup/Instalation Requirements
 
-1. Open terminal
+1. Open terminal 
 2. input these commands into command line:
 
 * cd desktop
 * git clone https://github.com/Michael-Burton1/Mar-project5.git
+* cd Mar-project5
 * code .
+* npm install
+* npm run build
+
+
+This should install the webpack and any other dependancies you need to use this project.
 
 ### To view project in browser you can:
 
-* right click the index.htnl file and open in live browser.  
+* run $npm run start
+This will open a live server for you to view the project.  
 
 
 ## Known Bugs
