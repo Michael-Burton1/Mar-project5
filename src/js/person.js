@@ -1,10 +1,9 @@
 
 export default class Person {
 
-  constructor (earthAge, outputAge, lifeExpect, mercuryAge, venusAge, marsAge, jupiterAge) {
+  constructor (earthAge, outputAge, mercuryAge, venusAge, marsAge, jupiterAge) {
     this.earthAge = earthAge;
     this.outputAge = outputAge;
-    this.lifeExpect = 200;
     this.mercuryAge =mercuryAge;
     this.venusAge= venusAge;
     this.marsAge= marsAge;
@@ -63,6 +62,13 @@ export default class Person {
     }
   }  
   jupiterLifeLeft(jupiterAge) {
-    
+    let jupiterOutput= 6 - jupiterAge; 
+    if (jupiterOutput < 0) {
+      let jupiterResult = "You have lived " + Math.abs(jupiterOutput) + " years longer than you should have." ;
+      return jupiterResult;
+    } else{
+      let jupiterResult = "You WILL die in " + jupiterOutput + " years." ;
+      return jupiterResult;
+    }
   }
 }

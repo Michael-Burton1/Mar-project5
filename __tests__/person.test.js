@@ -44,7 +44,7 @@ describe('Person', () => {
     expect(person1.marsLifeLeft(20)).toEqual("You WILL die in " + 22 + " years.");
   });
   test ('it should return the life expectance in number of years on Jupiter', () => {
-    expect(person1.jupiterLifeLeft(10)).toEqual("You have lived " + 2 + " years longer than you should have.");
+    expect(person1.jupiterLifeLeft(10)).toEqual("You have lived " + 4 + " years longer than you should have.");
   });
   test ('it should return the life expectance in number of years on Jupiter', () => {
     expect(person1.jupiterLifeLeft(3)).toEqual("You WILL die in " + 3 + " years.");
