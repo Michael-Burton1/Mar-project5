@@ -62,4 +62,7 @@ export default class Person {
       return marsResult;
     }
   }  
+  jupiterLifeLeft(jupiterAge) {
+    
+  }
 }
