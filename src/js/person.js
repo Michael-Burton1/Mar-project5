@@ -52,4 +52,7 @@ export default class Person {
       return venusResult;
     }
   }
+  marsLifeLeft(marsAge) {
+    
+  }
 }

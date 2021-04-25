@@ -34,8 +34,13 @@ describe('Person', () => {
   test ('it should return the life expectance in number of years on Venus', () => {
     expect(person1.venusLifeLeft(229)).toEqual("You have lived " + 100 + " years longer than you should have.");
   });
-  test ('it should return the life expectance in number of years on mercury', () => {
+  test ('it should return the life expectance in number of years on Venus', () => {
     expect(person1.venusLifeLeft(100)).toEqual("You WILL die in " + 29 + " years.");
   });
-  
+  test ('it should return the life expectance in number of years on Mars', () => {
+    expect(person1.marsLifeLeft(100)).toEqual("You have lived " + 58 + " years longer than you should have.");
+  });
+  test ('it should return the life expectance in number of years on Mars', () => {
+    expect(person1.marsLifeLeft(20)).toEqual("You WILL die in " + 22 + " years.");
+  });
 });
