@@ -53,6 +53,13 @@ export default class Person {
     }
   }
   marsLifeLeft(marsAge) {
-    
-  }
+    let marsOutput= 42 - marsAge; 
+    if (marsOutput < 0) {
+      let marsResult = "You have lived " + Math.abs(marsOutput) + " years longer than you should have." ;
+      return marsResult;
+    } else{
+      let marsResult = "You WILL die in " + marsOutput + " years." ;
+      return marsResult;
+    }
+  }  
 }
