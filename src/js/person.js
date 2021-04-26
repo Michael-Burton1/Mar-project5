@@ -42,7 +42,7 @@ export default class Person {
     }
   }
   venusLifeLeft(venusAge) {
-    let venusOutput= 129 - this.venusAge;
+    let venusOutput= 129 - venusAge;
     if (venusOutput < 0) {
       let venusResult = "You have lived " + Math.abs(venusOutput) + " years longer than you should have." ;
       return venusResult;
